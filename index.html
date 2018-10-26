@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+     <body ng-app="product">
+
+        <div ng-controller='ProductController'>
+            <button ng-click='getAll()'>Get Products</button>
+            <div ng-repeat='result in results'>
+                {{result}}
+            </div>
+        </div>
+        
+
+
+         <script src="node_modules/angular/angular.js"></script>
+         <script src="node_modules/angular-mocks/angular-mocks.js"></script>
+         <script src="app/product/product.module.js"></script>
+         <script src="app/product/product.service.js"></script>
+         <script src="app/product/product.controller.js"></script>
+         <script src="spec/unit/product/productDataBuilder.js"></script>
+    </body>
+</html>

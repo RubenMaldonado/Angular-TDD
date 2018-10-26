@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+     <body ng-app="shop">
+         <h3>{{'Shop'}}</h3>
+         
+        <div ng-controller="ShopSearchController">
+            <input type="text" ng-model="searchQuery"/>
+            <button ng-click="search(searchQuery)">search</button>
+            <ul>
+                <li ng-repeat="result in results"><a href="#!/detail/{{result.id}}/">{{result}}</a></li>
+            </ul>
+        </div>
+
+        <div ng-controller="ShopRecentlyViewedController">
+            <h4>Recently Viewed:</h4>
+            <ul>
+                <li ng-repeat="item in recent">
+                    <a href="">{{item}}</a>
+                </li>
+            </ul>
+        </div>
+        <div ng-view>
+
+        </div>
+
+
+         <script src="node_modules/angular/angular.js"></script>
+         <script src="node_modules/angular-route/angular-route.js"></script>
+         <script src="app/shop/shopSearch.module.js"></script>
+         <script src="app/shop/shopSearch.controller.js"></script>
+         <script src="app/shop/shopSplash.controller.js"></script>
+         <script src="app/shop/shopSearchDetail.controller.js"></script>
+         <script src="app/shop/shopRecentlyViewed.controller.js"></script>
+    </body>
+</html>

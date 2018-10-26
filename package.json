@@ -1,0 +1,25 @@
+{
+  "name": "angularjs-protractor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.7.5",
+    "angular-mocks": "^1.7.5",
+    "angular-route": "^1.7.5",
+    "http-server": "^0.11.1",
+    "jasmine": "^3.2.0",
+    "jasmine-core": "^3.2.1",
+    "karma": "^3.0.0",
+    "karma-jasmine": "^1.1.2",
+    "protractor": "^5.4.1"
+  },
+  "devDependencies": {
+    "karma-chrome-launcher": "^2.2.0"
+  }
+}

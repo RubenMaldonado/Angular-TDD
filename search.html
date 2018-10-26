@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+     <body ng-app="search">
+         <h3>{{'Search'}}</h3>
+         
+        <div ng-controller="SearchController">
+            <input type="text" ng-model="searchQuery"/>
+            <button ng-click="search(searchQuery)">search</button>
+            <ul>
+                <li ng-repeat="result in results"><a href="#!/detail/{{result.id}}/">{{result}}</a></li>
+            </ul>
+        </div>
+
+        <div ng-view>
+
+        </div>
+
+
+         <script src="node_modules/angular/angular.js"></script>
+         <script src="node_modules/angular-route/angular-route.js"></script>
+         <script src="app/search/search.module.js"></script>
+         <script src="app/search/search.controller.js"></script>
+         <script src="app/search/splash.controller.js"></script>
+         <script src="app/search/searchDetail.controller.js"></script>
+    </body>
+</html>

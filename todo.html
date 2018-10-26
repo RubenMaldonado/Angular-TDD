@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+     <body ng-app="todo">
+        
+        {{"Hola" + "Como tale tale vu"}}
+
+        <div ng-controller="TodoController">
+                {{greeting}}
+            List
+            <ul ng-repeat="item in list">
+                <li>{{item}}</li>
+            </ul>
+        </div>
+         <script src="node_modules/angular/angular.js"></script>
+         <script src="app/todo.js"></script>
+     </body>
+</html>
